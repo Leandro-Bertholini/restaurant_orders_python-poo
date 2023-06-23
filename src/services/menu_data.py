@@ -17,7 +17,6 @@ class MenuData:
                 ingredient = row["ingredient"]
                 recipe_amount = int(row["recipe_amount"])
 
-                #  Cria um objeto com o nome e o preço
                 self.dishes.add(Dish(dish, price))
 
                 # o iterador é criado internamente no conjunto self.dishes
