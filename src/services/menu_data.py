@@ -17,10 +17,11 @@ class MenuData:
                 ingredient = row["ingredient"]
                 recipe_amount = int(row["recipe_amount"])
 
+                # cria cada objeto e adiciona ao conjunto
                 self.dishes.add(Dish(dish, price))
 
                 # o iterador é criado internamente no conjunto self.dishes
-                dish_items = next(int(self.dishes))
+                dish_items = next(iter(self.dishes))
 
                 dish_items.add_ingredient_dependency(
                     Ingredient(ingredient), recipe_amount
