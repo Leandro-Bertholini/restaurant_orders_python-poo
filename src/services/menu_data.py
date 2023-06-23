@@ -20,8 +20,8 @@ class MenuData:
                 self.dishes.add(Dish(dish, price))
 
                 # o iterador é criado internamente no conjunto self.dishes
-                dish = self.dishes
+                dish_items = next(int(self.dishes))
 
-                dish.add_ingredient_dependency(
+                dish_items.add_ingredient_dependency(
                     Ingredient(ingredient), recipe_amount
                 )
