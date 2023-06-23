@@ -6,7 +6,7 @@ import csv
 # Req 3
 class MenuData:
     def __init__(self, source_path: str) -> None:
-        self._dishes = set()
+        self.dishes = set()
 
         with open(source_path, "r") as csv_file:
             file = csv.DictReader(csv_file)
@@ -20,9 +20,9 @@ class MenuData:
                 # cria cada objeto e adiciona ao conjunto
                 self.dishes.add(Dish(dish, price))
 
-                # o iterador é criado internamente no conjunto self.dishes
-                dish_items = next(iter(self.dishes))
+                # para iterar
+                next_dish = next(iter(self.dishes))
 
-                dish_items.add_ingredient_dependency(
+                next_dish.add_ingredient_dependency(
                     Ingredient(ingredient), recipe_amount
                 )
