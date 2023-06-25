@@ -33,8 +33,8 @@ class MenuBuilder:
                 filtered_menu.append(
                     {
                         "dish_name": dish.name,
-                        "ingredients": dish.get_ingredients(),
                         "price": dish.price,
+                        "ingredients": dish.get_ingredients(),
                         "restrictions": dish.get_restrictions(),
                     }
                 )
