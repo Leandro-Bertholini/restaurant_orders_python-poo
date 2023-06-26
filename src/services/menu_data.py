@@ -17,7 +17,7 @@ class MenuData:
                 ingredient = row["ingredient"]
                 recipe_amount = int(row["recipe_amount"])
 
-                # cria objeto e adiciona ao conjunto
+                # cria o dict e adiciona ao conjunto
                 self.dishes.add(Dish(dish, price))
 
                 # para iterar
