@@ -31,7 +31,7 @@ class MenuBuilder:
         for dish in self.menu_data.dishes:
             if (
                 restriction not in dish.get_restrictions()
-                and self.inventory.check_recipe_availability(dish.recipe)
+                and self.inventory.check_recipe_availability(dish.recipe) # chama o método para  avaliar se tem ingrediente
             ):
                 menu_dict = {
                     "dish_name": dish.name,
