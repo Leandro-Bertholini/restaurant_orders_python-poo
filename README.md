@@ -20,7 +20,7 @@ Foi criado um programa que, de maneira simples, possa gerar seus cardápios cons
 
 Para executar, clone esse repositório com o comando:
 
-    git clone git@github.com:Leandro-Bertholini/projeto_restaurant_orders_python-poo.git
+    git clone git@github.com:Leandro-Bertholini/restaurant_orders_python-poo.git
 
 Entre na pasta do projeto e crie o ambiente virtual:
 
